@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Store</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="script.js"></script>
+  <style>
+    .product {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .product img {
+      max-width: 100%;
+    }
+    .btn-add-to-cart {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body onload="fetch_products();cart_len()">
+
+<!-- Header -->
+<header class="bg-dark text-white p-3">
+  <div class="container d-flex justify-content-between align-items-center">
+    <h1>Simple Store</h1>
+    <a href="cart.html" class="text-white"><i class="fas fa-shopping-cart"></i> Cart <label style="background-color: red; padding: 2px;" class="rounded-pill" id="cart_len"></label></a>
+  </div>
+</header>
+
+<!-- Main Content -->
+<div class="container mt-5">
+    <div class="row products">
+
+    </div>
+    <!-- Repeat for more products -->
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
